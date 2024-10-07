@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Translator</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Translator</h1>
+        
+        <div class="language-selector">
+            <label for="sourceLang">From:</label>
+            <select id="sourceLang">
+                <option value="en">English</option>
+                <option value="uk">Ukrainian</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+
+            <label for="targetLang">To:</label>
+            <select id="targetLang">
+                <option value="uk">Ukrainian</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        <button onclick="translateText()">Translate</button>
+
+        <h2>Translated Text:</h2>
+        <p id="outputText"></p>
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
